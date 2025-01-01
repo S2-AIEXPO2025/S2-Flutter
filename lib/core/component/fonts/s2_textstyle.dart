@@ -63,6 +63,18 @@ class S2TextStyle{
     );
   }
 
+  static TextStyle medium12({
+    required Color color
+  }) {
+    return TextStyle(
+        color: color,
+        fontSize: 12,
+        fontFamily: pretendard,
+        fontWeight: FontWeight.w500,
+        overflow: TextOverflow.visible
+    );
+  }
+
   static TextStyle regular10({
     required Color color
   }) {
