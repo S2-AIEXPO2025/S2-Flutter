@@ -13,7 +13,5 @@ class LoginScreen extends StatelessWidget {
       appBar: const LoginAppBarWidget(),
     );
 
-    return const Placeholder();
-
   }
 }
