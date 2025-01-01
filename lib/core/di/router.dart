@@ -1,5 +1,7 @@
 import 'package:expos2/presentation/login/view/login_screen.dart';
-import 'package:expos2/presentation/on_boarding/view/on_boarding_screen.dart';
+import 'package:expos2/presentation/main/view/main_screen.dart';
+import 'package:expos2/presentation/onboarding/view/on_boarding_screen.dart';
+import 'package:expos2/presentation/sign_up/view/sign_up_screen.dart';
 import 'package:expos2/presentation/splash/view/splash_screen.dart';
 import 'package:go_router/go_router.dart';
 
@@ -17,6 +19,14 @@ final router = GoRouter(
     GoRoute(
         path: '/login',
       builder: (context, state) => const LoginScreen()
-    )
+    ),
+      GoRoute(
+          path: '/signup',
+        builder: (context, state) => const SignUpScreen()
+      ),
+      GoRoute(
+          path: '/main',
+          builder: (context, state) => const MainScreen()
+      )
   ]
 );
