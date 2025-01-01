@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8427eed-410c-44ee-bca2-3715b37ecfae" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/component/fonts/s2_textstyle.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/component/fonts/s2_textstyle.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/component/widget/s2_start_button_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/component/widget/s2_start_button_widget.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/component/widget/s2_textfield_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/component/widget/s2_textfield_widget.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/di/router.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/di/router.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-    </list>
+    <list default="true" id="d8427eed-410c-44ee-bca2-3715b37ecfae" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +40,7 @@
     "cidr.known.project.marker": "true",
     "com.google.services.firebase.aqiPopupShown": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "FEAT/#5",
+    "git-widget-placeholder": "feat/#10",
     "io.flutter.reload.alreadyRun": "true",
     "last_opened_file_path": "/Users/user/Desktop/S2-Flutter",
     "settings.editor.selected.configurable": "AndroidSdkUpdater",
