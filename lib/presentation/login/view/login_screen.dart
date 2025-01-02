@@ -2,10 +2,12 @@ import 'package:expos2/core/component/fonts/s2_textstyle.dart';
 import 'package:expos2/core/component/widget/s2_button_widget.dart';
 import 'package:expos2/core/component/widget/s2_textfield_widget.dart';
 import 'package:expos2/core/constants/s2_color.dart';
+import 'package:expos2/core/di/router.dart';
 import 'package:expos2/presentation/login/widget/login_app_bar_widget.dart';
 import 'package:expos2/presentation/login/widget/login_body_text_widget.dart';
 import 'package:expos2/presentation/login/widget/login_bottom_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -104,10 +106,15 @@ class _LoginScreenState extends State<LoginScreen> {
               ],
             ),
             const SizedBox(height: 8),
-            S2ButtonWidget(
-                color: Color(0xFF868686),
-                text: '로그인',
-                backgroundColor: Color(0xFFE4E4E4)
+            GestureDetector(
+              onTap: (){
+                context.push('/main');
+              },
+              child: S2ButtonWidget(
+                  color: Color(0xFF868686),
+                  text: '로그인',
+                  backgroundColor: Color(0xFFE4E4E4)
+              ),
             ),
             const SizedBox(height: 40),
             LoginBottomWidget()
