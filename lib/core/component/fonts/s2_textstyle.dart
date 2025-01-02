@@ -3,6 +3,19 @@ import 'package:flutter/material.dart';
 const String pretendard = 'Pretendard';
 
 class S2TextStyle{
+
+  static TextStyle ExtraBold40({
+    required Color color,
+  }) {
+    return TextStyle(
+      color: color,
+      fontSize: 40,
+      fontFamily: pretendard,
+      fontWeight: FontWeight.w800,
+      overflow: TextOverflow.visible,
+    );
+  }
+
   static TextStyle semiBold30({
     required Color color,
   }) {
