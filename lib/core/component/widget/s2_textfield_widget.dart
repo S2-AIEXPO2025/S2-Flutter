@@ -1,7 +1,6 @@
 import 'package:expos2/core/component/fonts/s2_textstyle.dart';
 import 'package:expos2/core/constants/s2_color.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 enum S2TextFieldType{
   none, password
