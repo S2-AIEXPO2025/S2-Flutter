@@ -1,8 +1,10 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:expos2/core/component/fonts/s2_textstyle.dart';
+import 'package:expos2/core/component/widget/s2_button_widget.dart';
 import 'package:expos2/core/component/widget/s2_start_button_widget.dart';
 import 'package:expos2/core/constants/s2_color.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class OnBoardingScreen extends StatefulWidget {
   const OnBoardingScreen({super.key});
@@ -20,20 +22,16 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
       children: [
         Row(
           children: [
-            Text('data', style: S2TextStyle.ExtraBold40(color: S2Color.black)),
-            const SizedBox(width: 4),
-            Image.asset('assets/images/icons/onboarding/heart_icons.png'),
-          ],
-        ),
-        const SizedBox(height: 68),
-        Text(
-          'AI 연인과 채팅으로\n편하게 연애의 경험을\n시작합니다. 취향에 맞는 AI를\n통해 연애 경험을 쌓습니다.',
-          style: S2TextStyle.medium20(color: S2Color.black),
-        ),
-        const SizedBox(height: 90),
-        Center(child: Image.asset('assets/images/icons/onboarding/main.png')),
-      ],
+            Text('data', style: S2TextStyle.ExtraBold40(color: S2Color.black)),            const SizedBox(width: 4),            Image.asset('assets/images/icons/onboarding/heart_icons.png'),          ],),
+    const SizedBox(height: 68),
+    Text(
+      'AI 연인과 채팅으로\n편하게 연애의 경험을\n시작합니다. 취향에 맞는 AI를\n통해 연애 경험을 쌓습니다.',
+      style: S2TextStyle.medium20(color: S2Color.black),
     ),
+    const SizedBox(height: 90),
+    Center(child: Image.asset('assets/images/icons/onboarding/main.png')),
+  ],
+  ),
     Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -74,6 +72,14 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
     ),
   ];
 
+  void _onStartButtonPressed() {
+    if (_currentIndex == _pages.length - 1) {
+      context.push('/login');
+    } else {
+
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -97,7 +103,6 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                 },
               ),
             ),
-            //const SizedBox(height: 61),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: List.generate(
@@ -115,6 +120,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
             ),
             const SizedBox(height: 20),
             S2StartButtonWidget(
+              onPressed: _onStartButtonPressed,
               color: _currentIndex == 2 ? Colors.white : const Color(0xFFC2C2C2),
               text: '시작하기',
               backgroundColor: _currentIndex == 2 ? Colors.pink : const Color(0xFFF3F3F3),
