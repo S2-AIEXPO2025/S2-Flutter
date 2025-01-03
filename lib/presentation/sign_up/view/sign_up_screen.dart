@@ -22,6 +22,16 @@ class _SignUpScreenState extends State<SignUpScreen> {
 
   double _progress = 0.0;
 
+  @override
+  void dispose() {
+    nicknameController.dispose();
+    idController.dispose();
+    pwdController.dispose();
+    pwdCheckController.dispose();
+    birthController.dispose();
+    super.dispose();
+  }
+
   void _updateProgress() {
     double progress = 0.0;
     if (nicknameController.text.isNotEmpty) progress += 1;
