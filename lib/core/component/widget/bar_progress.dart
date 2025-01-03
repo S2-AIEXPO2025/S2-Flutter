@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 class BarProgress extends StatelessWidget {
   final double percentage;
   final Color backColor;
-  final bool showPercentage;
   final double stroke;
   final bool round;
   final Color borderColor;
@@ -13,7 +12,6 @@ class BarProgress extends StatelessWidget {
     Key? key,
     required this.percentage,
     required this.backColor,
-    required this.showPercentage,
     required this.stroke,
     required this.round,
     this.borderColor = Colors.pink,
