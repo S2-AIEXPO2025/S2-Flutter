@@ -64,7 +64,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 percentage: _progress,
                 backColor: Colors.white,
                 stroke: 16,
-                showPercentage: false,
                 round: true,
                 borderColor: Colors.pink,
                 progressColor: Colors.pink,
