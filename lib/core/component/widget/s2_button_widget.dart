@@ -1,6 +1,5 @@
 import 'package:expos2/core/component/fonts/s2_textstyle.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 
 class S2ButtonWidget extends StatelessWidget {
   final Color color;
@@ -15,11 +14,7 @@ class S2ButtonWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: (){
-        context.push('/main');
-      },
-      child: Container(
+    return Container(
         width: MediaQuery.of(context).size.width,
         height: 55,
         decoration: BoxDecoration(
@@ -29,7 +24,6 @@ class S2ButtonWidget extends StatelessWidget {
         child: Center(
           child: Text(text, style: S2TextStyle.medium15(color: color),),
         ),
-      ),
     );
   }
 }
