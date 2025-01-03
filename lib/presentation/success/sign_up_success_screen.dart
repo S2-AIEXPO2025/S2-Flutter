@@ -16,7 +16,8 @@ class _SignUpSuccessScreenState extends State<SignUpSuccessScreen> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(milliseconds: 1500)).then(
+    const signUpSuccessDelay = Duration(milliseconds: 1500);
+    Future.delayed(signUpSuccessDelay).then(
           (value) => context.go("/main"),
     );
   }
