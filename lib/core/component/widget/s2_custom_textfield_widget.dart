@@ -60,8 +60,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
                 _controller.text =
                 "${date.year}-${date.month.toString().padLeft(2, '0')}-${date.day.toString().padLeft(2, '0')}";
               });
-              // 날짜가 선택되면 onChanged 호출
-              widget.onChanged?.call(_controller.text); // 여기서 변경된 날짜를 전달
+              widget.onChanged?.call(_controller.text);
             },
           ),
         );
