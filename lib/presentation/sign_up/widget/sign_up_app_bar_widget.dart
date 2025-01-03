@@ -16,17 +16,19 @@ class SignUpAppBarWidget extends StatelessWidget implements PreferredSizeWidget{
       centerTitle: true,
       title: Row(
         children: [
-          Row(
-            children: [
-              SizedBox(width: 7),
-              GestureDetector(
-                child: SvgPicture.asset('assets/images/icons/login/back_arrow_icons.svg'),
-                onTap: ()
-                {context.pop();},
-              ),
-              SizedBox(width: 315),
-              SvgPicture.asset('assets/images/icons/login/logo_icons.svg')
-            ],
+          Expanded(
+            child: Row(
+              children: [
+                SizedBox(width: 7),
+                GestureDetector(
+                  child: SvgPicture.asset('assets/images/icons/login/back_arrow_icons.svg'),
+                  onTap: ()
+                  {context.pop();},
+                ),
+                const SizedBox(width: 315,),
+                SvgPicture.asset('assets/images/icons/login/logo_icons.svg')
+              ],
+            ),
           ),
         ],
       ),
