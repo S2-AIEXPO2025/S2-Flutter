@@ -9,14 +9,32 @@ class SplashScreen extends StatefulWidget {
   State<SplashScreen> createState() => _SplashScreenState();
 }
 
-class _SplashScreenState extends State<SplashScreen> {
+class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderStateMixin {
+  late AnimationController _controller;
+  late Animation<double> _animation;
 
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(milliseconds: 1500)).then(
-          (value) => context.go("/onboarding"),
+
+    _controller = AnimationController(
+      duration: const Duration(seconds: 2),
+      vsync: this,
     );
+
+    _animation = Tween<double>(begin: 0.0, end: 1.0).animate(_controller);
+    
+    _controller.forward();
+
+    Future.delayed(const Duration(seconds: 2), () {
+      context.go("/onboarding");
+    });
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
   }
 
   @override
@@ -24,9 +42,11 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       backgroundColor: S2Color.pink,
       body: Center(
-        child: Image.asset('assets/images/logo/s2_title 1.png'),
+        child: FadeTransition(
+          opacity: _animation,
+          child: Image.asset('assets/images/logo/s2_title 1.png'),
+        ),
       ),
     );
   }
 }
-
