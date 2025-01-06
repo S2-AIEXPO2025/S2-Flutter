@@ -13,7 +13,6 @@ class S2TextFieldWidget extends StatefulWidget {
   final TextEditingController controller;
   final FocusNode focusNode;
   final String hint;
-
   final Function? onChanged;
   final Widget? suffix;
   final String? widgetTitle;
