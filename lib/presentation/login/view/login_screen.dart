@@ -2,7 +2,6 @@ import 'package:expos2/core/component/fonts/s2_textstyle.dart';
 import 'package:expos2/core/component/widget/s2_button_widget.dart';
 import 'package:expos2/core/component/widget/s2_textfield_widget.dart';
 import 'package:expos2/core/constants/s2_color.dart';
-import 'package:expos2/core/di/router.dart';
 import 'package:expos2/presentation/login/widget/login_app_bar_widget.dart';
 import 'package:expos2/presentation/login/widget/login_body_text_widget.dart';
 import 'package:expos2/presentation/login/widget/login_bottom_widget.dart';
@@ -86,7 +85,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     decoration: BoxDecoration(
                       color: _isChecked ? S2Color.pink : S2Color.white,
                       border: Border.all(
-                        color: Color(0xFFDBDBDB),
+                        color: const Color(0xFFDBDBDB),
                         width: 1,
                       ),
                       borderRadius: BorderRadius.circular(100),
@@ -112,14 +111,14 @@ class _LoginScreenState extends State<LoginScreen> {
               onTap: (){
                 context.push('/main');
               },
-              child: S2ButtonWidget(
+              child: const S2ButtonWidget(
                   color: Color(0xFF868686),
                   text: '로그인',
                   backgroundColor: Color(0xFFE4E4E4)
               ),
             ),
             const SizedBox(height: 40),
-            LoginBottomWidget()
+            const LoginBottomWidget()
           ],
         ),
       ),
