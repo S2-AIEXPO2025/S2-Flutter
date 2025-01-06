@@ -1,5 +1,5 @@
 name: expos2
-description: "A new Flutter project."
+description: "이 프로젝트는 2025 Ai-expo 참가를 목적으로 기획 되었으며 가상 인물과 채팅을 할 수 있는 서비스를 제공합니다."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
