@@ -59,7 +59,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
               TextSpan(text: '되는\n대화를 할 수 있습니다.\nAI 연인과', style: S2TextStyle.medium20(color: S2Color.black)),
               TextSpan(text: ' 24시간 언제든', style: S2TextStyle.medium20(color: S2Color.pink)),
               TextSpan(text: ' 얘기를\n나눌 수 있습니다.', style: S2TextStyle.medium20(color: S2Color.black)),
-            ],
+            ]
           ),
         ),
         const SizedBox(height: 90),
