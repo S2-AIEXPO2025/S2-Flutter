@@ -51,25 +51,17 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
           ],
         ),
         const SizedBox(height: 68),
-        Row(
-          children: [
-            Text('AI 채팅으로', style: S2TextStyle.medium20(color: S2Color.black),),
-            Text(' 빠르게 연결', style: S2TextStyle.medium20(color: S2Color.pink),),
-            Text('되는', style: S2TextStyle.medium20(color: S2Color.black),)
-          ],
+        RichText(
+          text: TextSpan(
+            children: [
+              TextSpan(text: 'AI 채팅으로', style: S2TextStyle.medium20(color: S2Color.black)),
+              TextSpan(text: ' 빠르게 연결', style: S2TextStyle.medium20(color: S2Color.pink)),
+              TextSpan(text: '되는\n대화를 할 수 있습니다.\nAI 연인과', style: S2TextStyle.medium20(color: S2Color.black)),
+              TextSpan(text: ' 24시간 언제든', style: S2TextStyle.medium20(color: S2Color.pink)),
+              TextSpan(text: ' 얘기를\n나눌 수 있습니다.', style: S2TextStyle.medium20(color: S2Color.black)),
+            ],
+          ),
         ),
-        Text(
-          '대화를 할 수 있습니다.',
-          style: S2TextStyle.medium20(color: S2Color.black),
-        ),
-        Row(
-          children: [
-            Text('AI 연인과', style: S2TextStyle.medium20(color: S2Color.black),),
-            Text(' 24시간 언제든', style: S2TextStyle.medium20(color: S2Color.pink),),
-            Text(' 얘기를', style: S2TextStyle.medium20(color: S2Color.black),)
-          ],
-        ),
-        Text('나눌 수 있습니다.', style: S2TextStyle.medium20(color: S2Color.black),),
         const SizedBox(height: 90),
         Center(child: Image.asset('assets/images/icons/onboarding/main.png')),
       ],
@@ -85,24 +77,17 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
           ],
         ),
         const SizedBox(height: 68),
-        Text(
-          'AI 연인을 통해 연애할 때의',
-          style: S2TextStyle.medium20(color: S2Color.black),
+        RichText(
+          text: TextSpan(
+            children: [
+              TextSpan(text: 'AI 연인을 통해 연애할 때의\n', style: S2TextStyle.medium20(color: S2Color.black)),
+              TextSpan(text: '감정 그대로', style: S2TextStyle.medium20(color: S2Color.pink)),
+              TextSpan(text: '를 느껴보실 수 있습니다.\n실제 연애할 때의 ', style: S2TextStyle.medium20(color: S2Color.black)),
+              TextSpan(text: '감정', style: S2TextStyle.medium20(color: S2Color.pink)),
+              TextSpan(text: '을\n느끼고 연습할 수 있습니다.', style: S2TextStyle.medium20(color: S2Color.black)),
+            ],
+          ),
         ),
-        Row(
-          children: [
-            Text('감정 그대로', style: S2TextStyle.medium20(color: S2Color.pink),),
-            Text('를 느껴보실 수 있습니다.', style: S2TextStyle.medium20(color: S2Color.black),)
-          ],
-        ),
-        Row(
-          children: [
-            Text('실제 연애할 때의 ', style: S2TextStyle.medium20(color: S2Color.black),),
-            Text('감정', style: S2TextStyle.medium20(color: S2Color.pink),),
-            Text('을', style: S2TextStyle.medium20(color: S2Color.black),)
-          ],
-        ),
-        Text('느끼고 연습할 수 있습니다.', style: S2TextStyle.medium20(color: S2Color.black),),
         const SizedBox(height: 90),
         Center(child: Image.asset('assets/images/icons/onboarding/main.png')),
       ],
