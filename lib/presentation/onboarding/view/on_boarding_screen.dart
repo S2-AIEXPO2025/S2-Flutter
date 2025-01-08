@@ -51,12 +51,14 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
           ],
         ),
         const SizedBox(height: 68),
-        Row(
-          children: [
-            Text('AI 채팅으로', style: S2TextStyle.medium20(color: S2Color.black),),
-            Text(' 빠르게 연결', style: S2TextStyle.medium20(color: S2Color.pink),),
-            Text('되는', style: S2TextStyle.medium20(color: S2Color.black),)
-          ],
+        RichText(
+          text: TextSpan(
+            children: [
+              TextSpan(text: 'AI 채팅으로', style: S2TextStyle.medium20(color: S2Color.black),),
+              TextSpan(text: ' 빠르게 연결', style: S2TextStyle.medium20(color: S2Color.pink),),
+              TextSpan(text: '되는', style: S2TextStyle.medium20(color: S2Color.black),)
+            ]
+          ),
         ),
         Text(
           '대화를 할 수 있습니다.',
