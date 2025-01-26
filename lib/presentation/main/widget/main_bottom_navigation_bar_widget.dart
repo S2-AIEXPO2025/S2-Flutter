@@ -41,7 +41,7 @@ class _MainBottomNavigationBarWidgetState extends State<MainBottomNavigationBarW
   @override
   Widget build(BuildContext context) {
 
-    final List<Widget> _pages = const [
+    const List<Widget> pages = [
       MainScreen(),
       SearchScreen(),
       ChatScreen(),
@@ -49,7 +49,7 @@ class _MainBottomNavigationBarWidgetState extends State<MainBottomNavigationBarW
     ];
 
     return Scaffold(
-      body: _pages[_index],
+      body: pages[_index],
       bottomNavigationBar : BottomNavigationBar(
           currentIndex: _index,
           onTap: (int index) {
