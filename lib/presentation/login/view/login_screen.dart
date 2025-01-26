@@ -109,7 +109,7 @@ class _LoginScreenState extends State<LoginScreen> {
             const SizedBox(height: 8),
             GestureDetector(
               onTap: (){
-                context.push('/main');
+                context.push('/bottom');
               },
               child: const S2ButtonWidget(
                   color: Color(0xFF868686),
