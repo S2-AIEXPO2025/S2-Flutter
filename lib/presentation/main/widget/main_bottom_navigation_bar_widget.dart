@@ -17,6 +17,27 @@ class MainBottomNavigationBarWidget extends StatefulWidget {
 class _MainBottomNavigationBarWidgetState extends State<MainBottomNavigationBarWidget> {
   var _index = 0;
 
+  BottomNavigationBarItem _buildNavigationItem({
+    required String iconPath,
+    required String label,
+    required int index
+  }) {
+    return BottomNavigationBarItem(
+        icon: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const SizedBox(height: 12),
+            SvgPicture.asset(
+              iconPath,
+              color: _index == index ? S2Color.pink : S2Color.gray01,
+            ),
+            const SizedBox(height: 4,)
+          ],
+        ),
+      label: label
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
 
@@ -43,58 +64,26 @@ class _MainBottomNavigationBarWidgetState extends State<MainBottomNavigationBarW
           selectedLabelStyle: S2TextStyle.regular10(color: S2Color.pink),
           unselectedLabelStyle: S2TextStyle.regular10(color: S2Color.gray01),
           items: [
-            BottomNavigationBarItem(
-                icon: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    const SizedBox(height: 12),
-                    SvgPicture.asset('assets/images/icons/core/home_icons.svg',
-                      color: _index == 0 ? S2Color.pink : S2Color.gray01,
-                    ),
-                    const SizedBox(height: 4),
-                  ],
-                ),
-              label: '홈'
+            _buildNavigationItem(
+                iconPath: 'assets/images/icons/core/home_icons.svg',
+                label: '홈',
+                index: 0
             ),
-            BottomNavigationBarItem(
-                icon: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    const SizedBox(height: 12),
-                    SvgPicture.asset('assets/images/icons/core/search_icons.svg',
-                      color: _index == 1 ? S2Color.pink : S2Color.gray01,
-                    ),
-                    const SizedBox(height: 4),
-                  ],
-                ),
-                label: '검색'
+            _buildNavigationItem(
+                iconPath: 'assets/images/icons/core/search_icons.svg',
+                label: '검색',
+                index: 1
             ),
-            BottomNavigationBarItem(
-                icon: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    const SizedBox(height: 12),
-                    SvgPicture.asset('assets/images/icons/core/chat_icons.svg',
-                      color: _index == 2 ? S2Color.pink : S2Color.gray01,
-                    ),
-                    const SizedBox(height: 4),
-                  ],
-                ),
-                label: '채팅'
+            _buildNavigationItem(
+                iconPath: 'assets/images/icons/core/chat_icons.svg',
+                label: '채팅',
+                index: 2
             ),
-            BottomNavigationBarItem(
-                icon: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    const SizedBox(height: 12),
-                    SvgPicture.asset('assets/images/icons/core/my_page_icons.svg',
-                      color: _index == 3 ? S2Color.pink : S2Color.gray01,
-                    ),
-                    const SizedBox(height: 4),
-                  ],
-                ),
-                label: '내 정보'
-            )
+            _buildNavigationItem(
+                iconPath: 'assets/images/icons/core/my_page_icons.svg',
+                label: '내 정보',
+                index: 3
+            ),
           ],
       ),
     );
