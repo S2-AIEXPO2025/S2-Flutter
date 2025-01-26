@@ -20,17 +20,16 @@ class _MainBottomNavigationBarWidgetState extends State<MainBottomNavigationBarW
   @override
   Widget build(BuildContext context) {
 
-    final List<Widget> _pages = [
-      const MainScreen(),
-      const SearchScreen(),
-      const ChatScreen(),
-      const MyPageScreen()
+    final List<Widget> _pages = const [
+      MainScreen(),
+      SearchScreen(),
+      ChatScreen(),
+      MyPageScreen()
     ];
 
     return Scaffold(
       body: _pages[_index],
-      bottomNavigationBar: Container(
-        child: BottomNavigationBar(
+      bottomNavigationBar : BottomNavigationBar(
           currentIndex: _index,
           onTap: (int index) {
             setState(() {
@@ -97,7 +96,6 @@ class _MainBottomNavigationBarWidgetState extends State<MainBottomNavigationBarW
                 label: '내 정보'
             )
           ],
-        ),
       ),
     );
   }

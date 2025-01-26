@@ -1,5 +1,4 @@
 import 'package:expos2/presentation/login/view/login_screen.dart';
-import 'package:expos2/presentation/home/view/main_screen.dart';
 import 'package:expos2/presentation/main/widget/main_bottom_navigation_bar_widget.dart';
 import 'package:expos2/presentation/onboarding/view/on_boarding_screen.dart';
 import 'package:expos2/presentation/sign_up/view/sign_up_screen.dart';
