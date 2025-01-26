@@ -28,6 +28,30 @@ class S2TextStyle{
     );
   }
 
+  static TextStyle semiBold20({
+    required Color color,
+  }) {
+    return TextStyle(
+      color: color,
+      fontSize: 20,
+      fontFamily: pretendard,
+      fontWeight: FontWeight.w600,
+      overflow: TextOverflow.visible,
+    );
+  }
+
+  static TextStyle semiBold10({
+    required Color color,
+  }) {
+    return TextStyle(
+      color: color,
+      fontSize: 10,
+      fontFamily: pretendard,
+      fontWeight: FontWeight.w600,
+      overflow: TextOverflow.visible,
+    );
+  }
+
   static TextStyle regular30({
     required Color color
   }) {
@@ -37,6 +61,30 @@ class S2TextStyle{
       fontFamily: pretendard,
       fontWeight: FontWeight.w400,
       overflow: TextOverflow.visible
+    );
+  }
+
+  static TextStyle regular15({
+    required Color color
+  }) {
+    return TextStyle(
+        color: color,
+        fontSize: 15,
+        fontFamily: pretendard,
+        fontWeight: FontWeight.w400,
+        overflow: TextOverflow.visible
+    );
+  }
+
+  static TextStyle regular13({
+    required Color color
+  }) {
+    return TextStyle(
+        color: color,
+        fontSize: 13,
+        fontFamily: pretendard,
+        fontWeight: FontWeight.w400,
+        overflow: TextOverflow.visible
     );
   }
 
@@ -94,6 +142,18 @@ class S2TextStyle{
     return TextStyle(
         color: color,
         fontSize: 10,
+        fontFamily: pretendard,
+        fontWeight: FontWeight.w400,
+        overflow: TextOverflow.visible
+    );
+  }
+
+  static TextStyle regular8({
+    required Color color
+  }) {
+    return TextStyle(
+        color: color,
+        fontSize: 8,
         fontFamily: pretendard,
         fontWeight: FontWeight.w400,
         overflow: TextOverflow.visible
