@@ -21,7 +21,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
       children: [
         Row(
           children: [
-            Text('data', style: S2TextStyle.ExtraBold40(color: S2Color.black)),
+            Text('date', style: S2TextStyle.ExtraBold40(color: S2Color.black)),
             const SizedBox(width: 4),
             Image.asset('assets/images/icons/onboarding/heart_icons.png'),
           ],),
