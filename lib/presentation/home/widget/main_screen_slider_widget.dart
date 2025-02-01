@@ -14,6 +14,12 @@ class _MainScreenSliderWidgetState extends State<MainScreenSliderWidget> {
   final PageController _pageController = PageController();
 
   @override
+  void dispose() {
+    _pageController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Column(
       children: [
