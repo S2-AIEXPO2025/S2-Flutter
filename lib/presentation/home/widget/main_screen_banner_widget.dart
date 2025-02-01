@@ -11,14 +11,16 @@ class MainScreenBannerWidget extends StatefulWidget {
 class _MainScreenBannerWidgetState extends State<MainScreenBannerWidget> {
   final CarouselController carouselController = CarouselController();
 
+  static const List<String> _bannerImages = [
+      'assets/images/icons/main/banner1.png',
+      'assets/images/icons/main/banner2.png',
+      'assets/images/icons/main/banner3.png',
+  ];
+
   @override
   Widget build(BuildContext context) {
     return CarouselSlider(
-      items: [
-        'assets/images/icons/main/banner1.png',
-        'assets/images/icons/main/banner2.png',
-        'assets/images/icons/main/banner3.png'
-      ].map((imagePath) {
+      items: _bannerImages.map((imagePath) {
         return Builder(
           builder: (context) {
             return Padding(
