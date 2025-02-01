@@ -25,7 +25,7 @@ class _MainBottomNavigationBarWidgetState extends State<MainBottomNavigationBarW
         icon: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const SizedBox(height: 12),
+            const SizedBox(height: 8),
             SvgPicture.asset(
               iconPath,
               color: _index == index ? S2Color.pink : S2Color.gray01,
@@ -39,16 +39,17 @@ class _MainBottomNavigationBarWidgetState extends State<MainBottomNavigationBarW
 
   @override
   Widget build(BuildContext context) {
-
     const List<Widget> pages = [
       MainScreen(),
       ChatScreen(),
-      MyPageScreen()
+      MyPageScreen(),
     ];
 
     return Scaffold(
       body: pages[_index],
-      bottomNavigationBar : BottomNavigationBar(
+      bottomNavigationBar: Container(
+        height: 98,
+        child: BottomNavigationBar(
           currentIndex: _index,
           onTap: (int index) {
             setState(() {
@@ -63,22 +64,24 @@ class _MainBottomNavigationBarWidgetState extends State<MainBottomNavigationBarW
           unselectedLabelStyle: S2TextStyle.regular10(color: S2Color.gray01),
           items: [
             _buildNavigationItem(
-                iconPath: 'assets/images/icons/core/home_icons.svg',
-                label: '홈',
-                index: 0
+              iconPath: 'assets/images/icons/core/home_icons.svg',
+              label: '홈',
+              index: 0,
             ),
             _buildNavigationItem(
-                iconPath: 'assets/images/icons/core/chat_icons.svg',
-                label: '채팅',
-                index: 1
+              iconPath: 'assets/images/icons/core/chat_icons.svg',
+              label: '채팅',
+              index: 1,
             ),
             _buildNavigationItem(
-                iconPath: 'assets/images/icons/core/my_page_icons.svg',
-                label: '내 정보',
-                index: 2
+              iconPath: 'assets/images/icons/core/my_page_icons.svg',
+              label: '내 정보',
+              index: 2,
             ),
           ],
+        ),
       ),
     );
   }
+
 }
