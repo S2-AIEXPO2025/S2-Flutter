@@ -3,7 +3,6 @@ import 'package:expos2/core/constants/s2_color.dart';
 import 'package:expos2/presentation/chating/view/chat_screen.dart';
 import 'package:expos2/presentation/home/view/main_screen.dart';
 import 'package:expos2/presentation/my_page/view/my_page_screen.dart';
-import 'package:expos2/presentation/search/view/search_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -26,7 +25,7 @@ class _MainBottomNavigationBarWidgetState extends State<MainBottomNavigationBarW
         icon: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const SizedBox(height: 12),
+            const SizedBox(height: 8),
             SvgPicture.asset(
               iconPath,
               color: _index == index ? S2Color.pink : S2Color.gray01,
@@ -40,17 +39,17 @@ class _MainBottomNavigationBarWidgetState extends State<MainBottomNavigationBarW
 
   @override
   Widget build(BuildContext context) {
-
     const List<Widget> pages = [
       MainScreen(),
-      SearchScreen(),
       ChatScreen(),
-      MyPageScreen()
+      MyPageScreen(),
     ];
 
     return Scaffold(
       body: pages[_index],
-      bottomNavigationBar : BottomNavigationBar(
+      bottomNavigationBar: Container(
+        height: 98,
+        child: BottomNavigationBar(
           currentIndex: _index,
           onTap: (int index) {
             setState(() {
@@ -65,27 +64,24 @@ class _MainBottomNavigationBarWidgetState extends State<MainBottomNavigationBarW
           unselectedLabelStyle: S2TextStyle.regular10(color: S2Color.gray01),
           items: [
             _buildNavigationItem(
-                iconPath: 'assets/images/icons/core/home_icons.svg',
-                label: '홈',
-                index: 0
+              iconPath: 'assets/images/icons/core/home_icons.svg',
+              label: '홈',
+              index: 0,
             ),
             _buildNavigationItem(
-                iconPath: 'assets/images/icons/core/search_icons.svg',
-                label: '검색',
-                index: 1
+              iconPath: 'assets/images/icons/core/chat_icons.svg',
+              label: '채팅',
+              index: 1,
             ),
             _buildNavigationItem(
-                iconPath: 'assets/images/icons/core/chat_icons.svg',
-                label: '채팅',
-                index: 2
-            ),
-            _buildNavigationItem(
-                iconPath: 'assets/images/icons/core/my_page_icons.svg',
-                label: '내 정보',
-                index: 3
+              iconPath: 'assets/images/icons/core/my_page_icons.svg',
+              label: '내 정보',
+              index: 2,
             ),
           ],
+        ),
       ),
     );
   }
+
 }
