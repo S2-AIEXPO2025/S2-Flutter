@@ -3,7 +3,6 @@ import 'package:expos2/core/constants/s2_color.dart';
 import 'package:expos2/presentation/chating/view/chat_screen.dart';
 import 'package:expos2/presentation/home/view/main_screen.dart';
 import 'package:expos2/presentation/my_page/view/my_page_screen.dart';
-import 'package:expos2/presentation/search/view/search_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -43,7 +42,6 @@ class _MainBottomNavigationBarWidgetState extends State<MainBottomNavigationBarW
 
     const List<Widget> pages = [
       MainScreen(),
-      SearchScreen(),
       ChatScreen(),
       MyPageScreen()
     ];
@@ -70,19 +68,14 @@ class _MainBottomNavigationBarWidgetState extends State<MainBottomNavigationBarW
                 index: 0
             ),
             _buildNavigationItem(
-                iconPath: 'assets/images/icons/core/search_icons.svg',
-                label: '검색',
-                index: 1
-            ),
-            _buildNavigationItem(
                 iconPath: 'assets/images/icons/core/chat_icons.svg',
                 label: '채팅',
-                index: 2
+                index: 1
             ),
             _buildNavigationItem(
                 iconPath: 'assets/images/icons/core/my_page_icons.svg',
                 label: '내 정보',
-                index: 3
+                index: 2
             ),
           ],
       ),
