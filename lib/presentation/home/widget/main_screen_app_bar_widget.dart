@@ -14,7 +14,7 @@ class MainScreenAppBarWidget extends StatelessWidget implements PreferredSizeWid
       elevation: 0,
       centerTitle: true,
       title: Padding(
-        padding: const EdgeInsets.only(left: 7, top: 12),
+        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
         child: Row(
           children: [
             SvgPicture.asset('assets/images/icons/main/s2_title_icons.svg')
@@ -23,7 +23,8 @@ class MainScreenAppBarWidget extends StatelessWidget implements PreferredSizeWid
       ),
     );
   }
+  static const double _kAppBarHeight = 42.0;
 
   @override
-  Size get preferredSize => const Size.fromHeight(42);
+  Size get preferredSize => const Size.fromHeight(_kAppBarHeight);
 }
