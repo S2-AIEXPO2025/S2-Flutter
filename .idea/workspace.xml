@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d8427eed-410c-44ee-bca2-3715b37ecfae" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/presentation/onboarding/view/on_boarding_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/onboarding/view/on_boarding_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +48,7 @@
     "cidr.known.project.marker": "true",
     "com.google.services.firebase.aqiPopupShown": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "feat/#25-CodeRefactoring",
+    "git-widget-placeholder": "feat/#29-MainScreen",
     "io.flutter.reload.alreadyRun": "true",
     "last_opened_file_path": "/Users/user/Desktop/S2-Flutter",
     "settings.editor.selected.configurable": "AndroidSdkUpdater",
