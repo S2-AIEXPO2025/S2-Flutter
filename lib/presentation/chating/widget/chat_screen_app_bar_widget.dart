@@ -15,11 +15,8 @@ class ChatScreenAppBarWidget extends StatelessWidget implements PreferredSizeWid
       centerTitle: true,
       title: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
-        child: Row(
-          children: [
+        child:
             SvgPicture.asset('assets/images/icons/chat/s2_title_icons.svg')
-          ],
-        ),
       ),
     );
   }
