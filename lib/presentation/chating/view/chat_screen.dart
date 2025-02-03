@@ -18,6 +18,7 @@ class _ChatScreenState extends State<ChatScreen> {
       appBar: const ChatScreenAppBarWidget(),
       body: const Column(
         children: [
+          const SizedBox(height: 13),
           ChatScreenBodyWidget()
         ],
       ),
