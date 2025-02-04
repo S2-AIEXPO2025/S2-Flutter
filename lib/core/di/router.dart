@@ -1,3 +1,4 @@
+import 'package:expos2/presentation/chating_detail/view/chating_detail_screen.dart';
 import 'package:expos2/presentation/login/view/login_screen.dart';
 import 'package:expos2/presentation/main/widget/main_bottom_navigation_bar_widget.dart';
 import 'package:expos2/presentation/onboarding/view/on_boarding_screen.dart';
@@ -32,6 +33,10 @@ final router = GoRouter(
       GoRoute(
           path: '/bottom',
           builder: (context, state) => const MainBottomNavigationBarWidget()
-      )
+      ),
+    GoRoute(
+        path: '/chating_detail',
+        builder: (context, state) => const ChatingDetailScreen()
+    )
   ]
 );
