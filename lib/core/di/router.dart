@@ -35,8 +35,8 @@ final router = GoRouter(
           builder: (context, state) => const MainBottomNavigationBarWidget()
       ),
     GoRoute(
-        path: '/chating_detail',
-        builder: (context, state) => const ChatingDetailScreen()
+        path: '/chatting_detail',
+        builder: (context, state) => const ChattingDetailScreen()
     )
   ]
 );
