@@ -6,10 +6,10 @@ class ChattingDetailScreen extends StatefulWidget {
   const ChattingDetailScreen({super.key});
 
   @override
-  State<ChattingDetailScreen> createState() => _ChatingDetailScreenState();
+  State<ChattingDetailScreen> createState() => _ChattingDetailScreenState();
 }
 
-class _ChatingDetailScreenState extends State<ChattingDetailScreen> {
+class _ChattingDetailScreenState extends State<ChattingDetailScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
