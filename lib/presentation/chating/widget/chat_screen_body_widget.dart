@@ -88,7 +88,7 @@ class _ChatScreenBodyWidgetState extends State<ChatScreenBodyWidget> {
             4,
                 (index) => GestureDetector(
               onTap: () {
-                context.push('/chating_detail');
+                context.push('/chatting_detail');
               },
               child: Padding(
                 padding: const EdgeInsets.only(left: 23, right: 23, bottom: 20),
