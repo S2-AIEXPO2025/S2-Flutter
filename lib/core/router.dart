@@ -1,9 +1,9 @@
 import 'package:expos2/app.dart';
-import 'package:expos2/features/authentication/presentation/login/view/login_screen.dart';
-import 'package:expos2/features/authentication/presentation/sign_up/view/sign_up_screen.dart';
+import 'package:expos2/features/auth/presentation/login/view/login_screen.dart';
+import 'package:expos2/features/auth/presentation/sign_up/view/sign_up_screen.dart';
 import 'package:expos2/features/chatting_detail/presentation/view/chating_detail_screen.dart';
 import 'package:expos2/features/main/presentation/widget/main_bottom_navigation_bar_widget.dart';
-import 'package:expos2/features/onboarding/presentation/view/on_boarding_screen.dart';
+import 'package:expos2/features/on_boarding/presentation/view/on_boarding_screen.dart';
 import 'package:expos2/features/success/sign_up_success_screen.dart';
 import 'package:go_router/go_router.dart';
 
