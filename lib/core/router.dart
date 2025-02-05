@@ -1,4 +1,3 @@
-import 'package:expos2/app.dart';
 import 'package:expos2/features/auth/presentation/login/view/login_screen.dart';
 import 'package:expos2/features/auth/presentation/sign_up/view/sign_up_screen.dart';
 import 'package:expos2/features/chatting_detail/presentation/view/chating_detail_screen.dart';
@@ -12,10 +11,6 @@ final router = GoRouter(
   routes: [
     GoRoute(
         path: '/',
-        builder: (context, state) => const SplashScreen()
-    ),
-    GoRoute(
-        path: '/onboarding',
         builder: (context, state) => const OnBoardingScreen()
     ),
     GoRoute(
