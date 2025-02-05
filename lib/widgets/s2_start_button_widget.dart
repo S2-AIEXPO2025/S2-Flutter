@@ -1,4 +1,4 @@
-import 'package:expos2/core/constants/s2_style.dart';
+import 'package:expos2/core/s2_style.dart';
 import 'package:flutter/material.dart';
 
 class S2StartButtonWidget extends StatelessWidget {

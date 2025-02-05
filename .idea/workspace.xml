@@ -6,7 +6,40 @@
   <component name="ChangeListManager">
     <list default="true" id="d8427eed-410c-44ee-bca2-3715b37ecfae" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/core/component/fonts/s2_textstyle.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/s2_textstyle.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/core/component/widget/bar_progress.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/bar_progress.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/core/component/widget/s2_button_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/s2_button_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/core/component/widget/s2_custom_textfield_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/s2_custom_textfield_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/core/component/widget/s2_start_button_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/s2_start_button_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/core/component/widget/s2_textfield_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/s2_textfield_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/core/constants/s2_color.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/s2_color.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/core/constants/s2_style.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/s2_style.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/core/di/dio.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/core/di/router.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/router.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/data_sources/secure_storage_data_sources.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/chating/view/chat_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/chatting/presentation/view/chat_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/chating/widget/chat_screen_app_bar_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/chatting/presentation/widget/chat_screen_app_bar_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/chating/widget/chat_screen_body_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/chatting/presentation/widget/chat_screen_body_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/chating_detail/view/chating_detail_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/chatting_detail/presentation/view/chating_detail_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/chating_detail/widget/chatting_detail_app_bar_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/chatting_detail/presentation/widget/chatting_detail_app_bar_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/chating_detail/widget/chatting_detail_text_field_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/chatting_detail/presentation/widget/chatting_detail_text_field_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/home/view/main_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/presentation/view/main_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/home/widget/main_screen_app_bar_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/presentation/widget/main_screen_app_bar_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/home/widget/main_screen_banner_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/presentation/widget/main_screen_banner_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/home/widget/main_screen_slider_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/presentation/widget/main_screen_slider_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/login/view/login_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/authentication/presentation/login/view/login_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/login/widget/login_app_bar_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/authentication/presentation/login/widget/login_app_bar_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/login/widget/login_body_text_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/authentication/presentation/login/widget/login_body_text_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/login/widget/login_bottom_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/authentication/presentation/login/widget/login_bottom_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/main/widget/main_bottom_navigation_bar_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/main/presentation/widget/main_bottom_navigation_bar_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/my_page/view/my_page_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/my_page/presentation/view/my_page_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/my_page/widget/my_page_app_bar_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/my_page/presentation/widget/my_page_app_bar_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/onboarding/view/on_boarding_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/onboarding/presentation/view/on_boarding_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/sign_up/view/sign_up_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/authentication/presentation/sign_up/view/sign_up_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/sign_up/widget/sign_up_app_bar_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/authentication/presentation/sign_up/widget/sign_up_app_bar_widget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/splash/view/splash_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/success/sign_up_success_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/success/sign_up_success_screen.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +81,7 @@
     "cidr.known.project.marker": "true",
     "com.google.services.firebase.aqiPopupShown": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "feat/#29-MainScreen",
+    "git-widget-placeholder": "develope",
     "io.flutter.reload.alreadyRun": "true",
     "last_opened_file_path": "/Users/user/Desktop/S2-Flutter",
     "settings.editor.selected.configurable": "AndroidSdkUpdater",
@@ -57,7 +90,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lib/core/di" />
+      <recent name="$PROJECT_DIR$/lib" />
+      <recent name="$PROJECT_DIR$/lib/features" />
+      <recent name="$PROJECT_DIR$/lib/core" />
+      <recent name="$PROJECT_DIR$/lib/features/chatting/presentation" />
+      <recent name="$PROJECT_DIR$/lib/features/home/presentation" />
     </key>
   </component>
   <component name="RunManager">
@@ -94,9 +131,13 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/presentation/onboarding/view/on_boarding_screen.dart</url>
+          <url>file://$PROJECT_DIR$/lib/features/onboarding/presentation/view/on_boarding_screen.dart</url>
           <line>18</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/features/authentication/presentation/sign_up/view/sign_up_screen.dart</url>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,5 +1,5 @@
-import 'package:expos2/core/component/fonts/s2_textstyle.dart';
-import 'package:expos2/core/constants/s2_color.dart';
+import 'package:expos2/core/s2_textstyle.dart';
+import 'package:expos2/core/s2_color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:scroll_date_picker/scroll_date_picker.dart';

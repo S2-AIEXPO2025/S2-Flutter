@@ -1,4 +1,4 @@
-import 'package:expos2/core/constants/s2_color.dart';
+import 'package:expos2/core/s2_color.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -23,7 +23,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
     );
 
     _animation = Tween<double>(begin: 0.0, end: 1.0).animate(_controller);
-    
+
     _controller.forward();
 
     Future.delayed(const Duration(seconds: 2), () {

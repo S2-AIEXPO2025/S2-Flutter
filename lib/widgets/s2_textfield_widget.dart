@@ -1,5 +1,5 @@
-import 'package:expos2/core/component/fonts/s2_textstyle.dart';
-import 'package:expos2/core/constants/s2_color.dart';
+import 'package:expos2/core/s2_textstyle.dart';
+import 'package:expos2/core/s2_color.dart';
 import 'package:flutter/material.dart';
 
 enum S2TextFieldType{

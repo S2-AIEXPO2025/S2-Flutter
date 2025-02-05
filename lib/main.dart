@@ -1,5 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:expos2/core/di/router.dart';
+import 'package:expos2/core/router.dart';
 import 'package:flutter/material.dart';
 
 void main(){
