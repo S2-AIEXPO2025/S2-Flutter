@@ -46,6 +46,7 @@ dependencies:
   smooth_page_indicator: ^1.2.0+3
   flutter_native_splash: ^2.4.4
 
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -56,6 +57,18 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^4.0.0
+
+flutter_native_splash:
+  color: "#F73A93"
+  image: assets/images/logo/logo.png
+
+  ios: true
+  android: true
+
+  android_12:
+    image : assets/images/logo/logo.png
+    icon_background_color: "#F73A93"
+
 
 flutter:
 
