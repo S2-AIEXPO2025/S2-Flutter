@@ -41,37 +41,27 @@ final router = GoRouter(
         path: '/chatting_detail',
         builder: (context, state) => const ChattingDetailScreen()
     ),
-      GoRoute(
-          path: '/info1',
-          builder: (context, state) => const Info1Screen()
-      ),
-      GoRoute(
-          path: '/info2',
-          builder: (context, state) => const Info2Screen()
-      ),
-      GoRoute(
-          path: '/info3',
-          builder: (context, state) => const Info3Screen()
-      ),
-      GoRoute(
-          path: '/info4',
-          builder: (context, state) => const Info4Screen()
-      ),
-      GoRoute(
-          path: '/info5',
-          builder: (context, state) => const Info5Screen()
-      ),
-      GoRoute(
-          path: '/info6',
-          builder: (context, state) => const Info6Screen()
-      ),
-      GoRoute(
-          path: '/info7',
-          builder: (context, state) => const Info7Screen()
-      ),
-      GoRoute(
-          path: '/info8',
-          builder: (context, state) => const Info8Screen()
-      ),
+    GoRoute(
+        path: '/chatting',
+        routes: [
+          GoRoute(
+              path: 'info/:number',
+              builder: (context, state) {
+                final number = int.parse(state.pathParameters['number'] ?? '1');
+                switch (number) {
+                  case 1: return const Info1Screen();
+                  case 2: return const Info2Screen();
+                  case 3: return const Info3Screen();
+                  case 4: return const Info4Screen();
+                  case 5: return const Info5Screen();
+                  case 6: return const Info6Screen();
+                  case 7: return const Info7Screen();
+                  case 8: return const Info8Screen();
+                  default: throw Exception('Invalid info screen number');
+                }
+              }
+          ),
+        ]
+    ),
   ]
 );
