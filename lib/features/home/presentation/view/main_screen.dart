@@ -17,7 +17,7 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: S2Color.stratbackgroundcolor,
+      backgroundColor: S2Color.startbackgroundcolor,
       appBar: const MainScreenAppBarWidget(),
       body: SingleChildScrollView(
         child: Column(
