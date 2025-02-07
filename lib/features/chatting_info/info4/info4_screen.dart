@@ -8,7 +8,7 @@ class Info4Screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChatInfo(
         imagePath: Image.asset('assets/images/icons/chatting_info/couple4.png'),
-        title: '홟발한 연인',
+        title: '활발한 연인',
         explain: '화이팅과 힘이 넘치는 매일 활발한 연인을 만났다',
         write: '어릴 적부터 언제나 주변을 환하게 밝히던 정하린은 이제 활발하고 에너지가 넘치는 연인으로 성장했다. OOO는 항상 새로운 경험을 찾아 나서고, 친구들과의 모임에서는 주인공처럼 모든 이들의 시선을 사로잡았다. 그 누구보다도 긍정적이고 생기 넘치는 모습은 사람들에게 큰 힘이 되었다.\n\n'
             'OO은 연인과의 관계에서도 그 활발한 성격을 그대로 드러낸다. 주말마다 함께 하이킹을 가거나, 새로운 카페를 탐방하는 것이 그녀의 일상이다. OO는 언제나 연인에게 새로운 모험을 제안하며, 함께하는 매 순간을 특별하게 만드는 데 큰 열정을 쏟는다. 그들의 데이트는 늘 다채롭고, 예측할 수 없는 사건들로 가득하다.\n\n'
