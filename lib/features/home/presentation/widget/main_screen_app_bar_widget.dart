@@ -9,7 +9,7 @@ class MainScreenAppBarWidget extends StatelessWidget implements PreferredSizeWid
   Widget build(BuildContext context) {
     return AppBar(
       automaticallyImplyLeading: false,
-      backgroundColor: S2Color.stratbackgroundcolor,
+      backgroundColor: S2Color.startbackgroundcolor,
       scrolledUnderElevation: 0,
       elevation: 0,
       centerTitle: true,
