@@ -13,7 +13,7 @@ class S2Color{
   static Color green = const Color(0xFF1CD13D);
   static Color pink = const Color(0xFFF73A93);
   static Color maingreen = const Color(0xFFE5F1CA);
-  static Color backgroundColor = const Color(0xFFF9F9F9);
+  static Color backgroundPink = const Color(0xFFF9F9F9);
   static Color startbackgroundcolor = const Color(0xFFFEEBF4);
 
   static Gradient pinkgreen = const LinearGradient(

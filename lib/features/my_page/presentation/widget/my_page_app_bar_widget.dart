@@ -1,7 +1,6 @@
 import 'package:expos2/core/s2_color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:go_router/go_router.dart';
 
 class MyPageAppBarWidget extends StatelessWidget implements PreferredSizeWidget{
   const MyPageAppBarWidget({super.key});
@@ -14,22 +13,13 @@ class MyPageAppBarWidget extends StatelessWidget implements PreferredSizeWidget{
       scrolledUnderElevation: 0,
       elevation: 0,
       centerTitle: true,
-      title: Row(
+      title:Row(
+        mainAxisAlignment: MainAxisAlignment.end,
         children: [
-          Row(
-            children: [
-              SizedBox(width: 7),
-              GestureDetector(
-                child: SvgPicture.asset('assets/images/icons/login/back_arrow_icons.svg'),
-                onTap: ()
-                {context.pop();},
-              ),
-              SizedBox(width: 315),
-              SvgPicture.asset('assets/images/icons/login/logo_icons.svg')
-            ],
-          ),
+          SvgPicture.asset('assets/images/icons/login/logo_icons.svg', width: 28, height: 28,),
+          const SizedBox(width: 10,)
         ],
-      ),
+      )
     );
   }
 
