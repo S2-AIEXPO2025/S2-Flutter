@@ -125,6 +125,25 @@ class S2TextStyle{
   }
 
   static TextStyle medium13({
+    required Color color, required TextDecoration decoration,
+    Color? decorationColor,
+    double decorationThickness = 1.0,
+    TextDecorationStyle decorationStyle = TextDecorationStyle.solid,
+  }) {
+    return TextStyle(
+        color: color,
+        fontSize: 13,
+        decoration: decoration,
+        decorationColor: decorationColor ?? color,
+        decorationThickness: decorationThickness,
+        decorationStyle: decorationStyle,
+        fontFamily: pretendard,
+        fontWeight: FontWeight.w500,
+        overflow: TextOverflow.visible,
+    );
+  }
+
+  static TextStyle medium13_2({
     required Color color
   }) {
     return TextStyle(
