@@ -10,7 +10,7 @@ class MyPageInfoTextFieldWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const SizedBox(height: 36),
-        Text('닉네임', style: S2TextStyle.medium13(color: S2Color.gray01),),
+        Text('닉네임', style: S2TextStyle.medium13_2(color: S2Color.gray01),),
         Container(
           margin: const EdgeInsets.only(top: 8),
           padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 16),
@@ -21,7 +21,7 @@ class MyPageInfoTextFieldWidget extends StatelessWidget {
           child: Text('가나다라마바사아자차카타파하', style: S2TextStyle.regular15(color: S2Color.black),),
         ),
         const SizedBox(height: 24),
-        Text('성별', style: S2TextStyle.medium13(color: S2Color.gray01),),
+        Text('성별', style: S2TextStyle.medium13_2(color: S2Color.gray01),),
         Container(
           margin: const EdgeInsets.only(top: 8),
           padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 61),
@@ -32,7 +32,7 @@ class MyPageInfoTextFieldWidget extends StatelessWidget {
           child: Text('남자', style: S2TextStyle.regular15(color: S2Color.black),),
         ),
         const SizedBox(height: 24),
-        Text('생일', style: S2TextStyle.medium13(color: S2Color.gray01),),
+        Text('생일', style: S2TextStyle.medium13_2(color: S2Color.gray01),),
         Container(
           margin: const EdgeInsets.only(top: 8),
           padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 22),
