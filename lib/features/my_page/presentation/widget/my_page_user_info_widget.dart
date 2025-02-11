@@ -17,7 +17,7 @@ class MyPageUserInfoWidget extends StatelessWidget {
             color: S2Color.startbackgroundcolor,
             borderRadius: BorderRadius.circular(1000)
           ),
-          child: Text('en_hy12345', style: S2TextStyle.medium13(color: S2Color.pink),),
+          child: Text('en_hy12345', style: S2TextStyle.medium13_2(color: S2Color.pink),),
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
