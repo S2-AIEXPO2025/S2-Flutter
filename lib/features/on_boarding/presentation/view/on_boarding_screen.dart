@@ -107,7 +107,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: S2Color.backgroundPink,
+      backgroundColor: S2Color.backgroundColor,
       body: Padding(
         padding: const EdgeInsets.only(left: 34, right: 34, top: 78, bottom: 50),
         child: Column(
