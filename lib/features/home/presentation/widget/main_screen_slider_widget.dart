@@ -49,7 +49,7 @@ class _MainScreenSliderWidgetState extends State<MainScreenSliderWidget> {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text('가정적인 연인', style: S2TextStyle.medium13(color: S2Color.black),),
+                            Text('가정적인 연인', style: S2TextStyle.medium13_2(color: S2Color.black),),
                             Text('남자 | 여자', style: S2TextStyle.regular10(color: S2Color.gray01),),
                             const SizedBox(height: 8,),
                             Text('가정적인 여자친구 or 남자친구와\n대화할 수 있어요!', style: S2TextStyle.regular10(color: S2Color.gray01),)
@@ -70,7 +70,7 @@ class _MainScreenSliderWidgetState extends State<MainScreenSliderWidget> {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text('친구같은 연인', style: S2TextStyle.medium13(color: S2Color.black),),
+                            Text('친구같은 연인', style: S2TextStyle.medium13_2(color: S2Color.black),),
                             Text('남자 | 여자', style: S2TextStyle.regular10(color: S2Color.gray01),),
                             const SizedBox(height: 8,),
                             Text('친구같은 여자친구 or 남자친구와\n대화할 수 있어요!', style: S2TextStyle.regular10(color: S2Color.gray01),)
@@ -91,7 +91,7 @@ class _MainScreenSliderWidgetState extends State<MainScreenSliderWidget> {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text('귀여운 연인', style: S2TextStyle.medium13(color: S2Color.black),),
+                            Text('귀여운 연인', style: S2TextStyle.medium13_2(color: S2Color.black),),
                             Text('남자 | 여자', style: S2TextStyle.regular10(color: S2Color.gray01),),
                             const SizedBox(height: 8,),
                             Text('귀여운 여자친구 or 남자친구와\n대화할 수 있어요!', style: S2TextStyle.regular10(color: S2Color.gray01),)
@@ -112,7 +112,7 @@ class _MainScreenSliderWidgetState extends State<MainScreenSliderWidget> {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text('활발한 연인', style: S2TextStyle.medium13(color: S2Color.black),),
+                            Text('활발한 연인', style: S2TextStyle.medium13_2(color: S2Color.black),),
                             Text('남자 | 여자', style: S2TextStyle.regular10(color: S2Color.gray01),),
                             const SizedBox(height: 8,),
                             Text('활발한 여자친구 or 남자친구와\n대화할 수 있어요!', style: S2TextStyle.regular10(color: S2Color.gray01),)
@@ -136,7 +136,7 @@ class _MainScreenSliderWidgetState extends State<MainScreenSliderWidget> {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text('나를 귀여워하는 연인', style: S2TextStyle.medium13(color: S2Color.black),),
+                            Text('나를 귀여워하는 연인', style: S2TextStyle.medium13_2(color: S2Color.black),),
                             Text('남자 | 여자', style: S2TextStyle.regular10(color: S2Color.gray01),),
                             const SizedBox(height: 8,),
                             Text('나를 귀여워하는 여자친구 or 남자친구와\n대화할 수 있어요!', style: S2TextStyle.regular10(color: S2Color.gray01),)
@@ -157,7 +157,7 @@ class _MainScreenSliderWidgetState extends State<MainScreenSliderWidget> {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text('사극체 연인', style: S2TextStyle.medium13(color: S2Color.black),),
+                            Text('사극체 연인', style: S2TextStyle.medium13_2(color: S2Color.black),),
                             Text('남자 | 여자', style: S2TextStyle.regular10(color: S2Color.gray01),),
                             const SizedBox(height: 8,),
                             Text('사극체인 여자친구 or 남자친구와\n대화할 수 있어요!', style: S2TextStyle.regular10(color: S2Color.gray01),)
@@ -178,7 +178,7 @@ class _MainScreenSliderWidgetState extends State<MainScreenSliderWidget> {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text('츤데레 연인', style: S2TextStyle.medium13(color: S2Color.black),),
+                            Text('츤데레 연인', style: S2TextStyle.medium13_2(color: S2Color.black),),
                             Text('남자 | 여자', style: S2TextStyle.regular10(color: S2Color.gray01),),
                             const SizedBox(height: 8,),
                             Text('츤데레 여자친구 or 남자친구와\n대화할 수 있어요!', style: S2TextStyle.regular10(color: S2Color.gray01),)
@@ -199,7 +199,7 @@ class _MainScreenSliderWidgetState extends State<MainScreenSliderWidget> {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text('보호하고 싶은 연인', style: S2TextStyle.medium13(color: S2Color.black),),
+                            Text('보호하고 싶은 연인', style: S2TextStyle.medium13_2(color: S2Color.black),),
                             Text('남자 | 여자', style: S2TextStyle.regular10(color: S2Color.gray01),),
                             const SizedBox(height: 8,),
                             Text('보호하고 싶은 여자친구 or 남자친구와\n대화할 수 있어요!', style: S2TextStyle.regular10(color: S2Color.gray01),)

@@ -103,7 +103,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
           obscuringCharacter: "⦁",
           decoration: InputDecoration(
             hintText: widget.hintText,
-            hintStyle: S2TextStyle.medium13(color: const Color(0xFFDCDCDC)),
+            hintStyle: S2TextStyle.medium13_2(color: const Color(0xFFDCDCDC)),
             border: const UnderlineInputBorder(
               borderSide: BorderSide(color: Colors.grey),
             ),
