@@ -1,5 +1,6 @@
 import 'package:expos2/core/s2_style.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class MyPageBottomWidget extends StatelessWidget {
   const MyPageBottomWidget({super.key});
@@ -14,7 +15,9 @@ class MyPageBottomWidget extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               GestureDetector(
-                onTap: (){},
+                onTap: (){
+                  context.push('/edit_profile');
+                },
                 child: Text('프로필 정보 수정',
                   style: S2TextStyle.medium13(
                     decoration: TextDecoration.underline,
