@@ -21,7 +21,7 @@ class _EditProfileInfoWidgetState extends State<EditProfileInfoWidget> {
 
   Future<void> _loadProfileData() async{
     setState(() {
-      _nicknameController.text = 'notfound';
+      _nicknameController.text = '가나다라마바사아자차카타파하';
       selectedGender;
     });
   }
