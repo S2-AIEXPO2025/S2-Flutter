@@ -9,7 +9,6 @@ import 'package:expos2/features/chatting_info/info5/info5_screen.dart';
 import 'package:expos2/features/chatting_info/info6/info6_screen.dart';
 import 'package:expos2/features/chatting_info/info7/info7_screen.dart';
 import 'package:expos2/features/chatting_info/info8/info8_screen.dart';
-import 'package:expos2/features/edit_profile/presentation/view/edit_profile_screen.dart';
 import 'package:expos2/features/main/presentation/widget/main_bottom_navigation_bar_widget.dart';
 import 'package:expos2/features/on_boarding/presentation/view/on_boarding_screen.dart';
 import 'package:expos2/features/success/sign_up_success_screen.dart';
@@ -73,10 +72,6 @@ final router = GoRouter(
     GoRoute(
         path: '/info8',
         builder: (context, state) => const Info8Screen()
-    ),
-      GoRoute(
-          path: '/edit_profile',
-          builder: (context, state) => const EditProfileScreen()
-      )
+    )
   ]
 );
