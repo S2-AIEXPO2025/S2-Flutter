@@ -10,7 +10,21 @@ class EditProfileInfoWidget extends StatefulWidget {
 }
 
 class _EditProfileInfoWidgetState extends State<EditProfileInfoWidget> {
-  String? selectedGender; // 초기값 없이 설정
+  String? selectedGender;
+  final TextEditingController _nicknameController = TextEditingController();
+
+  @override
+  void initState() {
+    super.initState();
+    _loadProfileData();
+  }
+
+  Future<void> _loadProfileData() async{
+    setState(() {
+      _nicknameController.text = 'notfound';
+      selectedGender;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -31,6 +45,7 @@ class _EditProfileInfoWidgetState extends State<EditProfileInfoWidget> {
             SizedBox(
               height: 38,
               child: TextField(
+                controller: _nicknameController,
                 cursorColor: S2Color.pink,
                 cursorWidth: 1,
                 cursorHeight: 16,
