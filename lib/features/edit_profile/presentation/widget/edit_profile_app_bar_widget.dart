@@ -18,7 +18,7 @@ class EditProfileAppBarWidget extends StatelessWidget implements PreferredSizeWi
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           GestureDetector(
-            onTap: (){context.pop();},
+              onTap: (){context.pop();},
               child: SvgPicture.asset('assets/images/icons/login/back_arrow_icons.svg', width: 8, height: 17,)),
           SvgPicture.asset('assets/images/icons/chat/s2_title_icons.svg', width: 28, height: 28,)
         ],
