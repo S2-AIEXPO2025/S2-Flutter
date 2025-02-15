@@ -26,7 +26,9 @@ class MyPageBottomWidget extends StatelessWidget {
                 ),
               ),
               GestureDetector(
-                onTap: (){},
+                onTap: (){
+                  context.push('/edit_pw');
+                },
                 child: Text('비밀번호 변경',
                   style: S2TextStyle.medium13(
                       color: S2Color.gray02,

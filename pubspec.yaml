@@ -58,6 +58,7 @@ flutter:
     - assets/images/icons/chat/
     - assets/images/icons/chatting_info/
     - assets/images/icons/my_page/
+    - assets/images/icons/edit_pw/
 
   fonts:
     - family: Pretendard
