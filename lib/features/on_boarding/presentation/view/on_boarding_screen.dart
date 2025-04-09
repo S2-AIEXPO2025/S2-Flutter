@@ -36,7 +36,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
             )
         ),
         const SizedBox(height: 90),
-        Center(child: Image.asset('assets/images/icons/onboarding/main.png')),
+        Center(child: Image.asset('assets/images/icons/onboarding/date.png')),
       ],
     ),
     Column(
@@ -65,7 +65,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
             )
         ),
         const SizedBox(height: 90),
-        Center(child: Image.asset('assets/images/icons/onboarding/main.png')),
+        Center(child: Image.asset('assets/images/icons/onboarding/talking.png')),
       ],
     ),
     Column(
@@ -91,7 +91,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
             )
         ),
         const SizedBox(height: 90),
-        Center(child: Image.asset('assets/images/icons/onboarding/main.png')),
+        Center(child: Image.asset('assets/images/icons/onboarding/feeling.png')),
       ],
     ),
   ];

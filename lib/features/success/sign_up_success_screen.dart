@@ -18,7 +18,7 @@ class _SignUpSuccessScreenState extends State<SignUpSuccessScreen> {
     super.initState();
     const signUpSuccessDelay = Duration(milliseconds: 1500);
     Future.delayed(signUpSuccessDelay).then(
-          (value) => context.go("/main"),
+          (value) => context.go("/bottom"),
     );
   }
 

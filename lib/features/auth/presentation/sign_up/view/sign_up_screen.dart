@@ -23,6 +23,16 @@ class _SignUpScreenState extends State<SignUpScreen> {
   double _progress = 0.0;
 
   @override
+  void initState() {
+    super.initState();
+    nicknameController.addListener(_updateProgress);
+    birthController.addListener(_updateProgress);
+    idController.addListener(_updateProgress);
+    pwdController.addListener(_updateProgress);
+    pwdCheckController.addListener(_updateProgress);
+  }
+
+  @override
   void dispose() {
     nicknameController.dispose();
     idController.dispose();
@@ -52,7 +62,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
         selectedGender != null &&
         idController.text.isNotEmpty &&
         pwdController.text.isNotEmpty &&
-        pwdCheckController.text == pwdController.text && pwdCheckController.text.isNotEmpty;
+        pwdCheckController.text == pwdController.text &&
+        pwdCheckController.text.isNotEmpty;
   }
 
   @override
@@ -101,7 +112,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   ),
                   const SizedBox(width: 20),
                   Flexible(
-                    flex:2,
+                    flex: 2,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -150,9 +161,11 @@ class _SignUpScreenState extends State<SignUpScreen> {
               ),
               const SizedBox(height: 36),
               GestureDetector(
-                onTap: () {
+                onTap: _isFormValid()
+                    ? () {
                   context.push('/success');
-                },
+                }
+                    : null,
                 child: S2ButtonWidget(
                   color: _isFormValid() ? Colors.white : const Color(0xFF868686),
                   text: '회원가입 하기',

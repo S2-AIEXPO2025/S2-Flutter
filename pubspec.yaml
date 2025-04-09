@@ -24,6 +24,7 @@ dependencies:
   smooth_page_indicator: ^1.2.0+3
   flutter_native_splash: ^2.4.4
   flutter_screenutil: ^5.9.3
+  web_socket_channel: ^3.0.2
 
 
 dev_dependencies:
@@ -59,6 +60,7 @@ flutter:
     - assets/images/icons/chatting_info/
     - assets/images/icons/my_page/
     - assets/images/icons/edit_pw/
+    - assets/images/icons/chatting_detail/
 
   fonts:
     - family: Pretendard

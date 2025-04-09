@@ -32,6 +32,19 @@ class _LoginScreenState extends State<LoginScreen> {
     pwdController = TextEditingController();
     idFocusNode = FocusNode();
     pwdFocusNode = FocusNode();
+
+    // 텍스트 필드 리스너 추가
+    idController.addListener(_checkIfFieldsFilled);
+    pwdController.addListener(_checkIfFieldsFilled);
+  }
+
+  void _checkIfFieldsFilled() {
+    final filled = idController.text.isNotEmpty && pwdController.text.isNotEmpty;
+    if (filled != areAllFieldsFilled) {
+      setState(() {
+        areAllFieldsFilled = filled;
+      });
+    }
   }
 
   @override
@@ -42,8 +55,6 @@ class _LoginScreenState extends State<LoginScreen> {
     pwdFocusNode.dispose();
     super.dispose();
   }
-
-  
 
   @override
   Widget build(BuildContext context) {
@@ -108,13 +119,15 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             const SizedBox(height: 8),
             GestureDetector(
-              onTap: (){
+              onTap: areAllFieldsFilled
+                  ? () {
                 context.push('/bottom');
-              },
-              child: const S2ButtonWidget(
-                  color: Color(0xFF868686),
-                  text: '로그인',
-                  backgroundColor: Color(0xFFE4E4E4)
+              }
+                  : null,
+              child: S2ButtonWidget(
+                color: areAllFieldsFilled ? Colors.white : const Color(0xFF868686),
+                text: '로그인',
+                backgroundColor: areAllFieldsFilled ? S2Color.pink : const Color(0xFFE4E4E4),
               ),
             ),
             const SizedBox(height: 40),

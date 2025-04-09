@@ -12,6 +12,7 @@ class ChatScreenBodyWidget extends StatefulWidget {
 }
 
 class _ChatScreenBodyWidgetState extends State<ChatScreenBodyWidget> {
+
   OverlayEntry? _popupMenuOverlay;
 
   void _showPopupMenu(BuildContext context, Offset position) {
@@ -32,7 +33,7 @@ class _ChatScreenBodyWidgetState extends State<ChatScreenBodyWidget> {
                 width: 120,
                 decoration: BoxDecoration(
                   color: S2Color.white,
-                  borderRadius: BorderRadius.circular(12),
+                  borderRadius: BorderRadius.circular(5),
                   boxShadow: const [
                     BoxShadow(
                       color: Colors.black26,
@@ -43,10 +44,22 @@ class _ChatScreenBodyWidgetState extends State<ChatScreenBodyWidget> {
                 ),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    _popupMenuItem('삭제'),
+                    GestureDetector(
+                      onTap: () {
+                        _removePopupMenu();
+                        _showDeleteConfirmDialog(context);
+                      },
+                      child: _popupMenuItem('삭제'),
+                    ),
                     Divider(height: 1, color: S2Color.gray01),
-                    _popupMenuItem('수정'),
+                    GestureDetector(
+                      onTap: () {
+                        _removePopupMenu();
+                      },
+                      child: _popupMenuItem('연인 정보 수정'),
+                    ),
                   ],
                 ),
               ),
@@ -58,17 +71,80 @@ class _ChatScreenBodyWidgetState extends State<ChatScreenBodyWidget> {
     Overlay.of(context).insert(_popupMenuOverlay!);
   }
 
-  Widget _popupMenuItem(String text) {
-    return GestureDetector(
-      onTap: () {
-        _removePopupMenu();
+  void _showDeleteConfirmDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      barrierDismissible: true,
+      builder: (BuildContext dialogContext) {
+        return Dialog(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+            side: BorderSide(color: Color(0xFFFF37B9).withOpacity(0.2), width: 1),
+          ),
+          elevation: 100,
+          backgroundColor: S2Color.white,
+          child: Container(
+            margin: const EdgeInsets.only(top: 43),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Column(
+                  children: [
+                    Text(
+                      '"츤데레 연인 | 남자"와의',
+                      style: S2TextStyle.regular15(color: S2Color.black),
+                    ),
+                    const SizedBox(height: 4),
+                    Text(
+                      '채팅을 삭제하시겠습니까?',
+                      style: S2TextStyle.regular15(color: S2Color.black),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 34),
+                Divider(height: 1, color: S2Color.gray02),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    TextButton(
+                      onPressed: () => Navigator.of(dialogContext).pop(),
+                      child: Text(
+                        '취소',
+                        style: S2TextStyle.regular15(color: S2Color.gray02),
+                      ),
+                    ),
+                    const SizedBox(width: 50),
+                    Container(
+                      height: 36,
+                      width: 1,
+                      color: S2Color.gray02,
+                    ),
+                    const SizedBox(width: 50),
+                    TextButton(
+                      onPressed: () {
+                        Navigator.of(dialogContext).pop();
+                      },
+                      child: Text(
+                        '삭제',
+                        style: S2TextStyle.regular15(color: S2Color.error),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        );
       },
-      child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
-        child: Text(
-          text,
-          style: S2TextStyle.regular13(color: S2Color.black),
-        ),
+    );
+  }
+
+  Widget _popupMenuItem(String text) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+      child: Text(
+        text,
+        style: S2TextStyle.regular13(color: S2Color.black),
       ),
     );
   }
@@ -115,12 +191,14 @@ class _ChatScreenBodyWidgetState extends State<ChatScreenBodyWidget> {
                       ],
                     ),
                     const Spacer(),
-                    GestureDetector(
-                      onTapDown: (details) {
-                        _showPopupMenu(context, details.globalPosition);
-                      },
-                      child: SvgPicture.asset(
-                        'assets/images/icons/chat/etc_icons.svg',
+                    Builder(
+                      builder: (innerContext) => GestureDetector(
+                        onTapDown: (details) {
+                          _showPopupMenu(innerContext, details.globalPosition);
+                        },
+                        child: SvgPicture.asset(
+                          'assets/images/icons/chat/etc_icons.svg',
+                        ),
                       ),
                     ),
                   ],
