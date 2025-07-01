@@ -12,7 +12,6 @@ class ChatScreenBodyWidget extends StatefulWidget {
 }
 
 class _ChatScreenBodyWidgetState extends State<ChatScreenBodyWidget> {
-
   OverlayEntry? _popupMenuOverlay;
 
   void _showPopupMenu(BuildContext context, Offset position) {
@@ -79,7 +78,10 @@ class _ChatScreenBodyWidgetState extends State<ChatScreenBodyWidget> {
         return Dialog(
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
-            side: BorderSide(color: Color(0xFFFF37B9).withOpacity(0.2), width: 1),
+            side: BorderSide(
+              color: const Color(0xFFFF37B9).withOpacity(0.2),
+              width: 1,
+            ),
           ),
           elevation: 100,
           backgroundColor: S2Color.white,
@@ -154,58 +156,126 @@ class _ChatScreenBodyWidgetState extends State<ChatScreenBodyWidget> {
     _popupMenuOverlay = null;
   }
 
+  Widget _chatItem({
+    required BuildContext context,
+    required String name,
+    required String time,
+    required String imagePath,
+    required String detailRoute,
+  }) {
+    return GestureDetector(
+      onTap: () {
+        context.push(detailRoute);
+      },
+      child: Padding(
+        padding: const EdgeInsets.only(left: 23, right: 23, bottom: 20),
+        child: Row(
+          children: [
+            ClipRRect(
+              borderRadius: BorderRadius.circular(20),
+              child: Image.asset(
+                imagePath,
+                width: 40,
+                height: 40,
+                fit: BoxFit.cover,
+              ),
+            ),
+            const SizedBox(width: 16),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  name,
+                  style: S2TextStyle.regular13(color: S2Color.black),
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  time,
+                  style: S2TextStyle.regular10(color: S2Color.gray01),
+                ),
+              ],
+            ),
+            const Spacer(),
+            Builder(
+              builder: (innerContext) => GestureDetector(
+                onTapDown: (details) {
+                  _showPopupMenu(innerContext, details.globalPosition);
+                },
+                child: SvgPicture.asset(
+                  'assets/images/icons/chat/etc_icons.svg',
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: _removePopupMenu,
       child: SingleChildScrollView(
         child: Column(
-          children: List.generate(
-            4,
-                (index) => GestureDetector(
-              onTap: () {
-                context.push('/chatting_detail');
-              },
-              child: Padding(
-                padding: const EdgeInsets.only(left: 23, right: 23, bottom: 20),
-                child: Row(
-                  children: [
-                    Image.asset(
-                      'assets/images/icons/chat/profile_img.png',
-                      width: 40,
-                      height: 40,
-                    ),
-                    const SizedBox(width: 16),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          '츤데레 연인 | 여자',
-                          style: S2TextStyle.regular13(color: S2Color.black),
-                        ),
-                        const SizedBox(height: 4),
-                        Text(
-                          '20시간 전',
-                          style: S2TextStyle.regular10(color: S2Color.gray01),
-                        ),
-                      ],
-                    ),
-                    const Spacer(),
-                    Builder(
-                      builder: (innerContext) => GestureDetector(
-                        onTapDown: (details) {
-                          _showPopupMenu(innerContext, details.globalPosition);
-                        },
-                        child: SvgPicture.asset(
-                          'assets/images/icons/chat/etc_icons.svg',
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+          children: [
+            _chatItem(
+              context: context,
+              name: '가정적인 연인 | 남자',
+              time: '20시간 전',
+              imagePath: 'assets/images/icons/chatting_info/couple1.png',
+              detailRoute: '/chating_detail_1',
             ),
-          ),
+            _chatItem(
+              context: context,
+              name: '친구같은 연인 | 남자',
+              time: '3일 전',
+              imagePath: 'assets/images/icons/chatting_info/couple2.png',
+              detailRoute: '/chating_detail_2',
+            ),
+            _chatItem(
+              context: context,
+              name: '귀여운 연인 | 여자',
+              time: '1주 전',
+              imagePath: 'assets/images/icons/chatting_info/couple3.png',
+              detailRoute: '/chating_detail_3',
+            ),
+            _chatItem(
+              context: context,
+              name: '활발한 연인 | 남자',
+              time: '2주 전',
+              imagePath: 'assets/images/icons/chatting_info/couple4.png',
+              detailRoute: '/chating_detail_4',
+            ),
+            _chatItem(
+              context: context,
+              name: '나를 귀여워하는 연인 | 남자',
+              time: '2주 전',
+              imagePath: 'assets/images/icons/chatting_info/couple5.png',
+              detailRoute: '/chating_detail_5',
+            ),
+            _chatItem(
+              context: context,
+              name: '사극체 연인 | 남자',
+              time: '2주 전',
+              imagePath: 'assets/images/icons/chatting_info/couple6.png',
+              detailRoute: '/chating_detail_6',
+            ),
+            _chatItem(
+              context: context,
+              name: '츤데레 연인 | 남자',
+              time: '2주 전',
+              imagePath: 'assets/images/icons/chatting_info/couple7.png',
+              detailRoute: '/chating_detail_7',
+            ),
+            _chatItem(
+              context: context,
+              name: '보호하고 싶은 연인 | 남자',
+              time: '2주 전',
+              imagePath: 'assets/images/icons/chatting_info/couple8.png',
+              detailRoute: '/chating_detail_8',
+            ),
+          ],
         ),
       ),
     );

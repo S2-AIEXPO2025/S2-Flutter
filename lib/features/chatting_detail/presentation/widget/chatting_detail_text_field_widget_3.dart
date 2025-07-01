@@ -1,23 +1,23 @@
-import 'package:expos2/features/chatting/data/chat_detail_remote_data_source.dart';
+import 'package:expos2/features/chatting/data/chat_detail_remote_data_source_3.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:expos2/core/s2_textstyle.dart';
 import 'package:expos2/core/s2_color.dart';
 
-class ChattingDetailTextFieldWidget extends StatefulWidget {
-  final ChatSocketService chatSocketService;
+class ChattingDetailTextFieldWidget3 extends StatefulWidget {
+  final ChatSocketService3 chatSocketService;
 
-  const ChattingDetailTextFieldWidget({
+  const ChattingDetailTextFieldWidget3({
     super.key,
     required this.chatSocketService,
   });
 
   @override
-  State<ChattingDetailTextFieldWidget> createState() =>
-      _ChattingDetailTextFieldWidgetState();
+  State<ChattingDetailTextFieldWidget3> createState() =>
+      _ChattingDetailTextFieldWidget1State();
 }
 
-class _ChattingDetailTextFieldWidgetState extends State<ChattingDetailTextFieldWidget> {
+class _ChattingDetailTextFieldWidget1State extends State<ChattingDetailTextFieldWidget3> {
   final FocusNode _focusNode = FocusNode();
   final TextEditingController _controller = TextEditingController();
   final List<ChatMessage> _messages = [];

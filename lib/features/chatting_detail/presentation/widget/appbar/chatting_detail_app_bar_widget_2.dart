@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
 
-class ChattingDetailAppBarWidget extends StatelessWidget implements PreferredSizeWidget{
-  const ChattingDetailAppBarWidget({super.key});
+class ChattingDetailAppBarWidget2 extends StatelessWidget implements PreferredSizeWidget{
+  const ChattingDetailAppBarWidget2({super.key});
 
   static const double _kAppBarHeight = 49.0;
 
@@ -25,7 +25,7 @@ class ChattingDetailAppBarWidget extends StatelessWidget implements PreferredSiz
                 onTap: (){context.pop();},
                 child: SvgPicture.asset('assets/images/icons/chat/back_arrow_icons.svg', width: 17, height: 17,),
               ),
-              Center(child: Text('츤데레 연인', style: S2TextStyle.regular13(color: S2Color.pink),)),
+              Center(child: Text('친구같은 연인', style: S2TextStyle.regular13(color: S2Color.pink),)),
               Image.asset('assets/images/icons/chat/profile_img.png', width: 34, height: 34)
             ],
           )
