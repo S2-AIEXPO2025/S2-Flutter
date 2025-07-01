@@ -1,6 +1,13 @@
 import 'package:expos2/features/auth/presentation/login/view/login_screen.dart';
 import 'package:expos2/features/auth/presentation/sign_up/view/sign_up_screen.dart';
-import 'package:expos2/features/chatting_detail/presentation/view/chating_detail_screen.dart';
+import 'package:expos2/features/chatting_detail/presentation/view/chating_detail_1.dart';
+import 'package:expos2/features/chatting_detail/presentation/view/chatting_detail_2.dart';
+import 'package:expos2/features/chatting_detail/presentation/view/chatting_detail_3.dart';
+import 'package:expos2/features/chatting_detail/presentation/view/chatting_detail_4.dart';
+import 'package:expos2/features/chatting_detail/presentation/view/chatting_detail_5.dart';
+import 'package:expos2/features/chatting_detail/presentation/view/chatting_detail_6.dart';
+import 'package:expos2/features/chatting_detail/presentation/view/chatting_detail_7.dart';
+import 'package:expos2/features/chatting_detail/presentation/view/chatting_detail_8.dart';
 import 'package:expos2/features/chatting_info/info1/info1_screen.dart';
 import 'package:expos2/features/chatting_info/info2/info2_screen.dart';
 import 'package:expos2/features/chatting_info/info3/info3_screen.dart';
@@ -40,8 +47,36 @@ final router = GoRouter(
         builder: (context, state) => const MainBottomNavigationBarWidget()
     ),
     GoRoute(
-        path: '/chatting_detail',
-        builder: (context, state) => const ChattingDetailScreen()
+        path: '/chating_detail_1',
+        builder: (context, state) => const ChattingDetailScreen1()
+    ),
+      GoRoute(
+          path: '/chating_detail_2',
+          builder: (context, state) => const ChattingDetailScreen2()
+      ),
+    GoRoute(
+        path: '/chating_detail_3',
+        builder: (context, state) => const ChattingDetailScreen3()
+    ),
+      GoRoute(
+          path: '/chating_detail_4',
+          builder: (context, state) => const ChattingDetailScreen4()
+      ),
+    GoRoute(
+        path: '/chating_detail_5',
+        builder: (context, state) => const ChattingDetailScreen5()
+    ),
+    GoRoute(
+        path: '/chating_detail_6',
+        builder: (context, state) => const ChattingDetailScreen6()
+    ),
+    GoRoute(
+        path: '/chating_detail_7',
+        builder: (context, state) => const ChattingDetailScreen7()
+    ),
+    GoRoute(
+        path: '/chating_detail_8',
+        builder: (context, state) => const ChattingDetailScreen8()
     ),
     GoRoute(
         path: '/info1',
